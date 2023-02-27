@@ -1,8 +1,8 @@
 class ActivityModel {
   String? activity;
   String? type;
-  int? participants;
-  int? price;
+  double? participants;
+  double? price;
   String? link;
   String? key;
   double? accessibility;

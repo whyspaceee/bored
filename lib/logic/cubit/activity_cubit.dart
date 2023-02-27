@@ -1,8 +1,11 @@
 import 'package:bloc/bloc.dart';
+import 'package:bored/data/repository/activity_repository.dart';
 import 'package:equatable/equatable.dart';
 
 part 'activity_state.dart';
 
 class ActivityCubit extends Cubit<ActivityState> {
-  ActivityCubit() : super(ActivityInitial());
+  ActivityRepository activityRepository;
+
+  ActivityCubit(this.activityRepository) : super(ActivityInitial());
 }
